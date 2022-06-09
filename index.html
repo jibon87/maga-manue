@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div>
+            <img class="manu-icon" width="32px" src="menu.png" alt="">
+        </div>
+        <div class="contener">
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a class="ii" href="#">home</a>
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="_blank">home</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">about</a></li>
+                            <li>
+                                <a class="ii" href="#">contic</a>
+                                <ul>
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#">blog</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li>
+                                        <a class="ii" href="#">contic</a>
+                                        <ul>
+                                            <li><a href="#">home</a></li>
+                                            <li><a href="#">blog</a></li>
+                                            <li><a href="#">about</a></li>
+                                            <li><a href="#">contic</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="ii" href="#">blog</a>
+                        <div class="fixed-manue">
+                            <ul>
+                                <h2>manu-1</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                            <ul>
+                                <h2>manu-2</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                            <ul>
+                                <h2>manu-3</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-static">
+                        <a class="ii" href="#">about</a>
+                        <div class="maga-manue">
+                            <ul>
+                                <h2>manu-1</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                            <ul>
+                                <h2>manu-2</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                            <ul>
+                                <h2>manu-3</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                            <ul>
+                                <h2>manu-3</h2>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contic</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">contic</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".manu-icon").on("click", function () {
+                    $("#menu").toggleClass("show");
+                });
+            });
+
+
+
+            // toogle
+            // const chk = document.getElementById("chk");
+
+            // chk.addEventListener("change", () => {
+            //     document.body.classList.toggle("dark");
+            // });
+        </script>
+    </body>
+</html>
